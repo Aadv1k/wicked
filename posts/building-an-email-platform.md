@@ -2,7 +2,7 @@ Title=Email platforms are terrible, so I built my own
 Date=2023-05-14
 Order=3
 
-as a developer Email is notoriously hard to work with, if you manage navigate through the ever changing maze of complex UI
+as a developer Email is notoriously hard to work with, if you manage navigate through the ever changing maze of complex UI, you will then have to deal with similar issues when trying to integrate it into your app. The issue emboldens when you just want to send a quick email and don't want to set up the infrastructure yourself.
 
 ### Because email is hard
 
