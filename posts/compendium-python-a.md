@@ -45,3 +45,13 @@ Infix methods, such as ones those enable LHS and RHS representations, such as du
 - use dataclasses as a scaffold for classes with the intention of adding custom methods later. Relying solely on dataclasses might lead to a code smell, especially if there are many "dumb" classes
 
 - make use of __slots__ when heavily contrained. It instead of allowing dict like class access, sets the elements at runtime and doesn't allow modifiication. Saving memory
+
+### Classes
+
+- make use of class-descriptors such as `@staticmethod`, `@classmethod`, `@property` for better representation of the logic that the functions hold. Consequently do NOT make everything into a property, especially if it holds more logic than 2-3 lines
+
+- Make use of getter/setter syntax via `@[function].setter` class method, this allows of private variables
+
+- Use context managers through `__enter__` and `__exit__` for a class, when needing to add clean-up and/or padding to be added to the code being executed
+
+- `@contextlib.contextmanager` decorator can also be used to turn a function into such manager
